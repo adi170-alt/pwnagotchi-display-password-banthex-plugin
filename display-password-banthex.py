@@ -17,8 +17,8 @@ import os
 
 
 class DisplayPassword(plugins.Plugin):
-    __author__ = '@nagy_craig'
-    __version__ = '1.0.0'
+    __author__ = '@nagy_craig & adi1708'
+    __version__ = '1.5.0'
     __license__ = 'GPL3'
     __description__ = 'A plugin to display recently cracked passwords'
 
@@ -60,6 +60,6 @@ class DisplayPassword(plugins.Plugin):
             ui.remove_element('display-password')
 
     def on_ui_update(self, ui):
-        last_line = 'tail -n 1 /root/handshakes/wpa-sec.cracked.potfile | awk -F: \'{print $3 " - " $4}\''
+        last_line = 'tail -n 1 /root/handshakes/banthex.cracked.potfile | awk -F: \'{print $3 " - " $4}\''
         ui.set('display-password',
                     "%s" % (os.popen(last_line).read().rstrip()))

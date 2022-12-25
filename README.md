@@ -1,6 +1,5 @@
-# Pwnagotchi display-password.py Plugin
+# Pwnagotchi display-password.py Plugin for banthex.de
 
-### Now available in the [evilsocket/pwnagotchi-plugins-contrib](https://github.com/evilsocket/pwnagotchi-plugins-contrib) repo, woohoo!
 
 Displays the most recent cracked password on the Pwnagotchi display.
 
